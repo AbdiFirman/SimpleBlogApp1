@@ -17,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,11 +31,17 @@
         <activity
             android:name=".LoginActivity1"
             android:label="@string/title_activity_login" />
-        <activity android:name=".PostActivity" />
+        <activity android:name=".PostActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SetupActivity" />
-        <activity android:name=".BlogSingleActivity"></activity>
+        <activity
+            android:name=".BlogSingleActivity"
+            android:label="@string/title_activity_nav_drawer"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
