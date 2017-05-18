@@ -64,7 +64,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="0.09"
-                android:background="#00ffffff"
+                android:background="@color/colorAccent"
                 app:srcCompat="@mipmap/ic_add_white_24dp" />
         </LinearLayout>
 
