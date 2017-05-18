@@ -130,7 +130,10 @@ public class MainActivity extends AppCompatActivity {
                 viewHolder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(MainActivity.this, post_key, Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(MainActivity.this, post_key, Toast.LENGTH_SHORT).show();
+                        Intent singleBlogIntent = new Intent(MainActivity.this, BlogSingleActivity.class);
+                        singleBlogIntent.putExtra("blog_id", post_key);
+                        startActivity(singleBlogIntent);
                     }
                 });
 
